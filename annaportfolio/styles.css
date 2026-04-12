@@ -236,7 +236,9 @@ ul {
    Buttons
    ===================================================== */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.6rem 1.35rem;
   background: #2563eb;
   color: #ffffff;
@@ -549,6 +551,83 @@ ul {
 }
 
 /* =====================================================
+   Nav Contact Buttons
+   ===================================================== */
+.nav-contacts {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(6px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.nav-contacts.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.floating-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: transparent;
+  color: #6b7280;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.floating-btn:hover {
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* =====================================================
+   Back to Top
+   ===================================================== */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 200;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37,99,235,0.35);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s, background 0.15s;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: #1d4ed8;
+  box-shadow: 0 6px 20px rgba(37,99,235,0.45);
+  transform: translateY(-2px);
+}
+
+/* =====================================================
    Responsive — Mobile
    ===================================================== */
 @media (max-width: 640px) {
@@ -559,6 +638,10 @@ ul {
   .section-hero {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .nav-contacts {
+    display: none;
   }
 
   .nav-toggle {
