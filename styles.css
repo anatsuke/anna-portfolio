@@ -597,6 +597,12 @@ ul {
   text-align: center;
 }
 
+.footer-privacy {
+  font-size: 0.725rem;
+  color: #c4c9d4;
+  margin-top: 0.4rem;
+}
+
 /* =====================================================
    Nav Contact Buttons
    ===================================================== */
