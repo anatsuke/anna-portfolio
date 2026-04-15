@@ -643,6 +643,32 @@ ul {
   border-color: #2563eb;
 }
 
+.nav-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 34px;
+  padding: 0 0.85rem;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid #2563eb;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 1.5rem;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.nav-cv-btn:hover {
+  text-decoration: none;
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+}
+
 /* =====================================================
    Back to Top
    ===================================================== */
