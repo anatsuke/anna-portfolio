@@ -609,20 +609,20 @@ ul {
   line-height: 1;
 }
 
-.lang-dots {
-  display: flex;
-  gap: 3px;
-}
-
-.lang-dot {
-  width: 18px;
+.lang-bar {
+  display: block;
+  width: 72px;
+  flex-shrink: 0;
   height: 4px;
   border-radius: 2px;
   background: #dbeafe;
-  flex-shrink: 0;
+  overflow: hidden;
 }
 
-.lang-dot.filled {
+.lang-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
   background: #93c5fd;
 }
 
