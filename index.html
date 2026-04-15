@@ -37,6 +37,9 @@
         <a href="mailto:contact@annagubanova.pro" class="floating-btn" aria-label="Email">
           <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         </a>
+        <a href="https://github.com/anatsuke" target="_blank" rel="noopener noreferrer" class="floating-btn" aria-label="GitHub">
+          <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
       </div>
     </nav>
   </header>
@@ -49,9 +52,9 @@
         <div class="hero-content">
           <p class="hero-label">Berlin, Germany</p>
           <h1 class="hero-name">Anna Gubanova</h1>
-          <p class="hero-title">Technical Product Manager</p>
+          <p class="hero-title">Product Manager</p>
           <p class="hero-tagline">
-            Product Manager / Product Owner with 5+ years driving SaaS, mobile, and platform products in agile environments — expert in backlog prioritization and cross-functional remote team leadership, ensuring increments deliver measurable value to users and business.
+            Technical Product Manager and Product Owner with 5+ years driving SaaS, mobile, and platform products in agile environments — expert in backlog prioritization and cross-functional remote team leadership, ensuring increments deliver measurable value to users and business.
           </p>
           <div class="hero-links">
             <a class="btn" href="https://linkedin.com/in/anna-gubanova-berlin" target="_blank" rel="noopener noreferrer" aria-label="Anna Gubanova on LinkedIn">
@@ -68,10 +71,9 @@
           <img class="hero-image" src="images/hero.jpg" alt="Anna Gubanova" />
         </div>
       </div>
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
-        Scroll
-      </div>
+      <button class="hero-scroll-hint" aria-label="Scroll to next section" onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'})">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
+      </button>
     </section>
 
     <!-- EXPERIENCE -->
@@ -86,7 +88,7 @@
               <span class="exp-period">Apr 2023 – Jul 2025</span>
               <span class="exp-location">Germany · Remote</span>
             </div>
-            <h3 class="exp-role">Product Owner</h3>
+            <h3 class="exp-role">Product Manager</h3>
             <p class="exp-company">Namecheap, Inc.</p>
             <ul class="exp-bullets">
               <li>Led greenfield platform initiative (Thunderbolt messenger) from 0–1, including scalability strategy and roadmap for multi-platform (iOS, Android, Web) environment. Coordinated 50% faster mobile feature delivery through release process optimization.</li>
@@ -161,6 +163,7 @@
               <li>Cloud &amp; microservice architecture</li>
               <li>FinOps fundamentals</li>
               <li>Prompt engineering</li>
+              <li>Claude Code</li>
             </ul>
           </div>
 
@@ -188,35 +191,119 @@
           <p class="edu-degree">Bachelor's Degree in Applied Linguistics</p>
           <p class="edu-school">National Aerospace University 'Kharkiv Aviation Institute'</p>
           <p class="edu-period">2013 – 2017</p>
+          <div class="edu-topics">
+            <span class="edu-topic">Linguistics &amp; Language Theory</span>
+            <span class="edu-topic">Translation &amp; Interpretation</span>
+            <span class="edu-topic">Cross-cultural Communication</span>
+            <span class="edu-topic">Technical Writing</span>
+            <span class="edu-topic">Academic Research</span>
+            <span class="edu-topic">Theory of Algorithms</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <p class="edu-degree">Product Management Certificate</p>
+          <p class="edu-school">IAMPM Club</p>
+          <p class="edu-period">2022</p>
+          <div class="edu-topics">
+            <span class="edu-topic">Marketing</span>
+            <span class="edu-topic">Design Thinking</span>
+            <span class="edu-topic">UX Research</span>
+            <span class="edu-topic">MVP Building</span>
+            <span class="edu-topic">Business Modeling</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <p class="edu-degree">Essential Google Cloud Infrastructure: Foundation Certificate</p>
+          <p class="edu-school">Coursera</p>
+          <p class="edu-period">2026</p>
+          <div class="edu-topics">
+            <span class="edu-topic">Virtual Machines</span>
+            <span class="edu-topic">Cloud Infrastructure</span>
+            <span class="edu-topic">Cloud Storage</span>
+            <span class="edu-topic">Virtual Networking</span>
+            <span class="edu-topic">Command-Line Interface</span>
+            <span class="edu-topic">Network Architecture</span>
+            <span class="edu-topic">Firewall</span>
+            <span class="edu-topic">Cloud Computing Architecture</span>
+            <span class="edu-topic">Google Cloud Platform</span>
+            <span class="edu-topic">Infrastructure as a Service (IaaS)</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
+    <!-- LANGUAGES -->
+    <section id="languages" class="section">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact-intro">Open to new opportunities. Feel free to reach out.</p>
-        <ul class="contact-list" role="list">
-          <li>
-            <a href="mailto:contact@annagubanova.pro" aria-label="Send email to Anna Gubanova">
-              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              contact@annagubanova.pro
-            </a>
+        <h2 class="section-title">Languages</h2>
+        <ul class="lang-list" role="list">
+          <li class="lang-item">
+            <span class="lang-code">EN</span>
+            <div class="lang-info">
+              <span class="lang-name">English</span>
+              <span class="lang-dots" aria-label="Professional (4 of 5)">
+                <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span>
+              </span>
+            </div>
+            <span class="lang-level">Professional</span>
           </li>
-          <li>
-            <a href="https://linkedin.com/in/anna-gubanova-berlin" target="_blank" rel="noopener noreferrer" aria-label="Anna Gubanova on LinkedIn">
-              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              linkedin.com/in/anna-gubanova-berlin
-            </a>
+          <li class="lang-item">
+            <span class="lang-code">RU</span>
+            <div class="lang-info">
+              <span class="lang-name">Russian</span>
+              <span class="lang-dots" aria-label="Native (5 of 5)">
+                <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span>
+              </span>
+            </div>
+            <span class="lang-level">Native</span>
           </li>
-          <li>
-            <span class="contact-location">
-              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              Berlin, Germany
-            </span>
+          <li class="lang-item">
+            <span class="lang-code">UA</span>
+            <div class="lang-info">
+              <span class="lang-name">Ukrainian</span>
+              <span class="lang-dots" aria-label="Native (5 of 5)">
+                <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span>
+              </span>
+            </div>
+            <span class="lang-level">Native</span>
+          </li>
+          <li class="lang-item">
+            <span class="lang-code">DE</span>
+            <div class="lang-info">
+              <span class="lang-name">German</span>
+              <span class="lang-dots" aria-label="Beginner (1 of 5)">
+                <span class="lang-dot filled"></span><span class="lang-dot"></span><span class="lang-dot"></span><span class="lang-dot"></span><span class="lang-dot"></span>
+              </span>
+            </div>
+            <span class="lang-level">Beginner</span>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">Open to new opportunities — feel free to reach out.</p>
+        <div class="contact-links">
+          <a class="contact-btn" href="mailto:contact@annagubanova.pro" aria-label="Send email to Anna Gubanova">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a class="contact-btn" href="https://linkedin.com/in/anna-gubanova-berlin" target="_blank" rel="noopener noreferrer" aria-label="Anna Gubanova on LinkedIn">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a class="contact-btn" href="https://github.com/anatsuke" target="_blank" rel="noopener noreferrer" aria-label="Anna Gubanova on GitHub">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <p class="contact-location">
+          <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Berlin, Germany
+        </p>
       </div>
     </section>
 
