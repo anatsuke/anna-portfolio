@@ -897,4 +897,8 @@ ul {
     flex: 1 1 auto;
     justify-content: center;
   }
+
+  .lang-list {
+    grid-template-columns: 1fr;
+  }
 }
